@@ -16,8 +16,14 @@ public class Main {
         int farkmin = Integer.MAX_VALUE;
         int farkmax = Integer.MAX_VALUE;
 
+        /* for döngüsü ile liste elemanları girilen sayıdan küçük ve büyük olmak üzere if ler ile ayrıldı ve farkmax ve fark min değerleri hangi
+        liste elemanında daha küçük olursa o liste elemanı en yakın  büyük ve küçük değer olarak atanıyor
+       */
+        
         for (int i : list){
+            //eğer girilen sayı liste elemanından küçükse kontrole giriyor
             if (i < inp){
+                // eğer girilen sayıdan liste elemanı çıkarıldığında önceki değerden küçükse yeni liste elemanı en küçük yakın değer olarak atanıyor
                 if ((inp - i) < farkmin ){
                     min = i;
                     farkmin = (inp - i);
